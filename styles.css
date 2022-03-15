@@ -15,11 +15,17 @@ html {
 }
 
 p {
-    font-weight:bold;
+font-family: 'Poppins', sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sansita Swashed', cursive;
+}
+
+h5 {
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 .header {
@@ -30,7 +36,8 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(5px);
     padding-top:40px;
     margin: 20px;
-    border-radius:5px;
+    border-radius:0px;
+    border-bottom:5px solid white;
 }
 
 .header h1 {
@@ -58,25 +65,29 @@ h1, h2, h3, h4, h5, h6 {
     width: fit-content;
     width: -moz-fit-content;
     margin-top:120px;
-    border-radius:5px;
     float:left;
+    border-top:5px solid white;
     margin-left:20px;
         backdrop-filter: blur(5px);
         background-color:rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(5px);
 }
 
+.nav ul {
+    padding:25px;
+}
+
 .nav ul li {
-    padding: 20px;
     font-size:25px;
     list-style:none;
-    font-weight:bold;
+
 }
 
 
 .welkom-li {
     font-size:35px!important;
     font-weight:700;
+    margin-bottom:40px;
 }
 
 .container {
@@ -91,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
     backdrop-filter: blur(5px);
 }
 
+
 .container h1 {
     font-size:40px;
     padding-bottom:20px;
@@ -99,6 +111,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .container p {
     font-size:20px;
+    padding-left:10px;
+}
+
+.textbox {
+    margin-top:100px;
+}
+
+.container .topleftarrow {
+    border-left:5px solid white;
+    height: 50px;
+    border-top:5px solid white;
+    width:200px;
+    margin-left:-20px;
+    margin-top:-88px;
 }
 
 .footer {
@@ -106,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     padding:40px;
     border-radius:5px;
     position:absolute;
+    border-top:5px solid white; 
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
