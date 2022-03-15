@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -17,15 +20,7 @@
    
 
     <!--Navbar-->
-    <nav class="nav">
-        <ul>
-            <li class="welkom-li"><center><h1>Menu</h1></center></li>
-            <li>Waarom Ons?</li>
-            <li>Ons Assortiment</li>
-            <li>Onze Specialiteiten</li>
-            <li>Over Ons</li>
-        </ul>
-    </nav>
+    <?php include 'menu.php';?>
     <!--Container-->
 
     <div class="container">
