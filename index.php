@@ -17,7 +17,7 @@
 </head>
 <body>
     <!--Header-->
-    <?php include 'header.php';?>
+   
 
     <!--Navbar-->
     <?php include 'menu.php';?>
@@ -28,6 +28,8 @@
         <div class="topleftarrow"></div>
         <div class="textbox">
         <h5>Cafetaria S is een beginnende snackbar te Wijchen.</h5>
+
+
         <p>Hier combineren wij het gemak van fastfood met de luxe van een restaurant.</p>
         <p>In onze keuken vindt u professionele apparatuur met échte chefs. Dit is ook wat ons uniek maakt als snackbar.</p>
         <br>
