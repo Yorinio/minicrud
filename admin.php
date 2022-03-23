@@ -13,8 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <title>Cafetaria S</title>
+
+ 
 </head>
 <body>
+
     <!--Header-->
     <?php include 'header.php';?>
 
@@ -25,24 +28,41 @@
 
     <!--Container-->
     <div class="container">
-        <center><h1>Over ons</h1></center>
+        <center><h1>Login</h1></center>
         <div class="topleftarrow"></div>
         <div class="textbox">
         
         <h5>
         <div class="harrowleft"></div>
-        <p>Cafetaria S is een beginnende snackbar te Wijchen.</p>
+        <p><i>Alleen voor werknemers/admin.</i></p>
         <div class="harrowright"></div>
         </h5>
 
+        <form name="oefen" action="uitkomst.php" method="post">
+        <input placeholder="Gebruikersnaam" id="naam" name="voornaam"> <br>
+        <input placeholder="Wachtwoord" id="wachtwoord" name="wachtwoord"> <br>
+        <button style="width:170px; margin-top:20px;" id="send" name="knop">Login</button>
+        </form>
+        <br>
 
-        <p>Hier combineren wij het gemak van fastfood met de luxe van een restaurant.</p>
-        <p>In onze keuken vindt u professionele apparatuur met échte chefs. Dit is ook wat ons uniek maakt als snackbar.</p>
+        <div class="adminpanel">
+        <i><p>Gerecht toevoegen</p></i>
+        <form name="oefen" action="uitkomst.php" method="post">
+        <input placeholder="Foto link" id="naam" name="voornaam"> <br>
+        <input placeholder="Naam gerecht" id="wachtwoord" name="wachtwoord"> <br>
+        <input placeholder="Beschrijving gerecht" id="wachtwoord" name="wachtwoord"> <br>
+        <button style="width:170px; margin-top:20px;" id="send" name="knop">Toevoegen</button>
+        </form>
         <br>
-        <p>Wij serveren onderandere unieke snacks, burgers, drankjes, milkshakes en ijsjes.</p>
-        <br>
-        <p>Graag verwelkomen wij u in ons restaurant op de Bredestraat 2, 6695CA Wijchen.</p>
-        <p>Wilt u liever langskomen voor een take-away? Bel ons dan alstublieft op: 0648293092</p>
+
+        <i><p>Gerecht bewerken</p></i>
+        <form name="oefen" action="uitkomst.php" method="post">
+        <input placeholder="Bestelcode" id="naam" name="voornaam"> <br>
+        <input placeholder="Nieuwe beschrijving" id="wachtwoord" name="wachtwoord"> <br>
+
+        <button style="width:170px; margin-top:20px;" id="send" name="knop">Bewerken</button>
+        </form>
+        </div>
     </div>
     </div>
     <!--Footer-->

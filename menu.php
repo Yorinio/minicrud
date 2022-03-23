@@ -4,11 +4,11 @@
 
 <nav class="nav">
         <ul>
-            <li class="welkom-li"><center><h1>Menu</h1></center></li>
-            <li>Waarom Ons?</li>
-            <li>Ons Assortiment</li>
-            <li>Onze Specialiteiten</li>
-            <li>Over Ons</li>
+            <li class="welkom-li"><h1>Menu</h1></li>
+            <li><a href="index.php">Over ons</a></li>
+            <li><a href="assortiment.php">Ons menu</a></li>
+            <br>
+            <li><a href="admin.php">Login</a></li>
         </ul>
     </nav>
 </body>

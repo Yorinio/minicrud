@@ -1,5 +1,5 @@
 html {
-    background: url(img/bg1.jpg) no-repeat center center fixed; 
+    background: url(img/bg1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,13 +10,39 @@ html {
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color:white;
+
 }
 
+input {
+    background-color:rgba(0, 0, 0, 0.2);
+    padding:5px;
+    border:1px solid white;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.8; /* Firefox */
+  }
+  
+.phpdesc {
+    font-size:20px;
+    font-style: italic;
+    padding:30px;
+    padding-top:10px;
+}
+
+button {
+    background-color:rgba(0, 0, 0, 0.4);
+    padding:5px;
+    border:1px solid white;
+    font-weight:bold;
+    font-size:17px;
+}
 p {
-font-family: 'Poppins', sans-serif;
-margin-left:20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left:20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,8 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h5 {
-    padding-top:10px;
-    padding-bottom:10px;
+    padding:20px;
 }
 
 .header {
@@ -35,9 +60,8 @@ h5 {
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     padding-top:40px;
-    margin: 20px;
     border-radius:0px;
-    border-bottom:5px solid white;
+    border-bottom:2px solid white;
 }
 
 .header h1 {
@@ -49,38 +73,65 @@ h5 {
 .header center p {
     text-transform:uppercase;
     font-weight:bold;
-    letter-spacing:3px;
+    letter-spacing:7px;
 }
 
 .hf-left {
-    margin-top:-55px;
+    margin-top:-70px;
 }
 
 .hf-right {
     float:right;
-    margin-top:-40px;
-}
-.nav {
-    background-color:#fafafa;
-    width: fit-content;
-    width: -moz-fit-content;
-    margin-top:120px;
-    float:left;
-    border-top:5px solid white;
-    margin-left:20px;
-        backdrop-filter: blur(5px);
-        background-color:rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(5px);
+    margin-top:-50px;
 }
 
+.nav {
+    width: 275px;
+    margin-top:120px;
+    float:left;
+    border-top:2px solid white;
+    backdrop-filter: blur(5px);
+    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding-bottom:15px;
+    margin-left:25px;
+}
+
+.material-icons {
+    margin-top:2px;
+    position:absolute;
+    margin-left:-25px;
+}
+.cart {
+    width: 275px;
+    margin-top:400px;
+    float:left;
+    border-top:2px solid white;
+    backdrop-filter: blur(5px);
+    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding-bottom:15px;
+    margin-left:25px;
+    position:absolute;
+}
+
+.cart .order {
+    margin-top:10px;
+    font-size:20px;
+    margin-left:40px;
+}
 .nav ul {
-    padding:25px;
+    padding:0px;
+
 }
 
 .nav ul li {
-    font-size:25px;
+    font-size:20px;
     list-style:none;
-
+    font-family: 'Poppins', sans-serif;
+    padding-right:20px;
+    font-weight:bold;
+    padding-left:20px;
 }
 
 
@@ -88,6 +139,7 @@ h5 {
     font-size:35px!important;
     font-weight:700;
     margin-bottom:40px;
+    margin-left:50px;
 }
 
 .container {
@@ -97,7 +149,6 @@ h5 {
     margin-top:20px;
     margin-left: 300px;
     padding:20px;
-    border-radius:5px;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
 }
@@ -109,25 +160,42 @@ h5 {
     font-weight:700;
 }
 
+
 .container p {
     font-size:20px;
     padding-left:10px;
+}
+
+
+.container .topleftarrow {
+    border-left:2px solid white;
+    height: 102px;
+    border-top:2px solid white;
+    width:300px;
+    margin-left:-20px;
+    margin-top:-88px;
+    position:absolute;
 }
 
 .textbox {
     margin-top:100px;
 }
 
-.container .topleftarrow {
-    border-left:5px solid white;
-    height: 50px;
-    border-top:5px solid white;
-    width:200px;
-    margin-left:-20px;
-    margin-top:-88px;
+.harrowleft {
+    width:20px;
+    height:20px;
+    border-left:2px solid white;
+    border-top:2px solid white;
+    margin-left:-15px;
+    margin-top:-10px;
+    position:absolute;
 }
 
+
+
 .footer {
+
+    
     width:100%;
     padding:40px;
     border-radius:5px;
@@ -136,4 +204,23 @@ h5 {
     bottom: 0;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
+}
+
+.sub {
+    margin-top:150px;
+}
+.option img {
+    margin-top: 50px;
+    width:400px;
+    border:1px solid white;
+}
+
+.option {
+    display:flex;
+    padding-right:20px;
+}
+.option .content {
+    margin-top: 50px;
+    
+
 }
