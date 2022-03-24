@@ -31,7 +31,7 @@
             <div class="textbox">
                 <h5>
                     <div class="harrowleft"></div>
-                    <p>Bekijk hier onze heerlijke opties</p>
+                    <p>Hier vindt u onze ambachtelijke </p>
                     <div class="harrowright"></div>
                 </h5>
 
