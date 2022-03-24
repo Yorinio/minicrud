@@ -31,7 +31,7 @@
             <div class="textbox">
                 <h5>
                     <div class="harrowleft"></div>
-                    <p>Hier vindt u onze ambachtelijke </p>
+                    <p>Hier vindt u onze ambachtelijke originele gerechten.</p>
                     <div class="harrowright"></div>
                 </h5>
 
@@ -39,6 +39,7 @@
             
 
                 <center class="sub">Frieten</center>
+                <hr>
                 <div class="option">
                     <img src="img/friet1.png" />
                     <div class="content">
@@ -47,7 +48,7 @@
                             <?php
                                 $sql = "SELECT beschrijving FROM voorraad WHERE ID = :id";
                                 $stmt = $connect->prepare($sql);
-                                $productID = 'FRI01';
+                                $productID = '1';
                                 $stmt->bindParam(":id", $productID);
                                 $stmt-> execute();
                                 $result = $stmt->fetch();
@@ -55,6 +56,7 @@
                             ?>
                         </div>
                         <p>Bestelcode: FRI01</p>
+                        <p id="price">€4,99</p>
                     </div>
                 </div>
 
@@ -72,10 +74,12 @@
                             ?> 
                         </div>
                     <p>Bestelcode: FRI02</p>
+                    <p id="price">€3,99</p>
                     </div>
                 </div>
 
                 <center class="sub">Snacks</center>
+                <hr>
                 <div class="option">
                     <img src="img/snack1.png" />
                     <div class="content">
@@ -90,6 +94,7 @@
                                 ?> 
                             </div>
                         <p>Bestelcode: SNA01</p>
+                        <p id="price">€2,49</p>
                     </div>
                 </div>
 
@@ -107,10 +112,12 @@
                             ?> 
                         </div>
                         <p>Bestelcode: SNA02</p>
+                        <p id="price">€3,49</p>
                     </div>
                 </div>
 
                 <center class="sub">Burgers</center>
+                <hr>
                 <div class="option">
                     <img src="img/burger1.jpg" />
                     <div class="content">
@@ -125,9 +132,9 @@
                             ?> 
                             </div>
                         <p>Bestelcode: BUR01</p>
+                        <p id="price">€5,99</p> 
                     </div>
                 </div>
-
                 <div class="option">
                     <img src="img/burger2.png" />
                     <div class="content">
@@ -142,6 +149,7 @@
                             ?> 
                         </div>
                         <p>Bestelcode: BUR02</p>
+                        <p id="price">€6,99</p>
                     </div>
                 </div>
             </div>

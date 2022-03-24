@@ -208,11 +208,20 @@ h5 {
 
 .sub {
     margin-top:150px;
+    letter-spacing:25px;
+    text-transform:uppercase;
+    font-weight:100;
 }
 .option img {
     margin-top: 50px;
-    width:400px;
+    width:300px;
     border:1px solid white;
+}
+
+#price {
+    margin-left:300px;
+    margin-top:-40px;
+    font-size:30px;
 }
 
 .option {
