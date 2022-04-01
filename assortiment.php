@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <title>Cafetaria S</title>
     </head>
+
     <body>
         <!--Header-->
         <?php include 'header.php';?>
@@ -31,7 +32,8 @@
             <div class="textbox">
                 <h5>
                     <div class="harrowleft"></div>
-                    <p>Hier vindt u onze ambachtelijke originele gerechten.</p>
+                    <p>Bij Cafetaria S hebben wij ervoor gekozen om een balans te vinden tussen luxe en convenience.</p>
+                    <p>Voor vragen over allergenen kunt u ons bellen op 0648293092.</p>
                     <div class="harrowright"></div>
                 </h5>
 
@@ -48,7 +50,7 @@
                             <?php
                                 $sql = "SELECT beschrijving FROM voorraad WHERE ID = :id";
                                 $stmt = $connect->prepare($sql);
-                                $productID = '1';
+                                $productID = 'FRI01';
                                 $stmt->bindParam(":id", $productID);
                                 $stmt-> execute();
                                 $result = $stmt->fetch();
@@ -156,5 +158,7 @@
         </div>
         <!--Footer-->
         <?php include 'footer.php';?>
+
+        
     </body>
 </html>

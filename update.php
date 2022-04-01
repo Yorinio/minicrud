@@ -1,15 +1,20 @@
-<?php include_once('connect.php'); ?> </div>
+<?php 
+    include_once('connect.php'); 
 
-
-<?php
-$sql = "UPDATE voorraad SET beschrijving='test' WHERE id=1";
-$productID = "1"
-
- $stmt = $connect->prepare($sql);
- $productID = 'FRI01';
- $stmt->bindParam(":id", $productID);
- $stmt-> execute();
- $result = $stmt->fetch();
- echo $result['beschrijving'];
-                               $sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+    if (isset($_POST['knop'])) {
+       
+        $sql = "UPDATE voorraad SET beschrijving = :beschrijving WHERE ID=:id";
+        $stmt = $connect->prepare($sql);
+        $productDesc = $_POST['beschrijving'];
+        $id = $_POST['bestelcode'];
+        $stmt->bindParam(":beschrijving", $productDesc);
+        $stmt->bindParam(":id", $id);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        ?> 
+        <script>
+            window.location="http://localhost/minicrud/admin.php";
+        </script>
+        <?php
+    }
 ?>
