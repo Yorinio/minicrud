@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <?php include_once('connect.php'); ?> </div>
@@ -38,122 +39,8 @@
                 </h5>
 
       
-            
-
-                <center class="sub">Frieten</center>
-                <hr>
-                <div class="option">
-                    <img src="img/friet1.png" />
-                    <div class="content">
-                        <p style="font-size: 30px;"><b>Robuuste Paprikafriet</b></p>
-                        <div class="phpdesc">
-                            <?php
-                                $sql = "SELECT beschrijving FROM voorraad WHERE ID = :id";
-                                $stmt = $connect->prepare($sql);
-                                $productID = 'FRI01';
-                                $stmt->bindParam(":id", $productID);
-                                $stmt-> execute();
-                                $result = $stmt->fetch();
-                                echo $result['beschrijving'];
-                            ?>
-                        </div>
-                        <p>Bestelcode: FRI01</p>
-                        <p id="price">€4,99</p>
-                    </div>
-                </div>
-
-                <div class="option">
-                    <img src="img/friet2.jpg" />
-                    <div class="content">
-                    <p style="font-size: 30px;"><b>Knapperige Rasfriet</b></p>
-                        <div class="phpdesc">
-                            <?php
-                                $productID = 'FRI02';
-                                $stmt->bindParam(":id", $productID);
-                                $stmt-> execute();
-                                $result = $stmt->fetch();
-                                echo $result['beschrijving'];
-                            ?> 
-                        </div>
-                    <p>Bestelcode: FRI02</p>
-                    <p id="price">€3,99</p>
-                    </div>
-                </div>
-
-                <center class="sub">Snacks</center>
-                <hr>
-                <div class="option">
-                    <img src="img/snack1.png" />
-                    <div class="content">
-                        <p style="font-size: 30px;"><b>El Mexicano</b></p>
-                            <div class="phpdesc">
-                                <?php
-                                    $productID = 'SNA01';
-                                    $stmt->bindParam(":id", $productID);
-                                    $stmt-> execute();
-                                    $result = $stmt->fetch();
-                                    echo $result['beschrijving'];
-                                ?> 
-                            </div>
-                        <p>Bestelcode: SNA01</p>
-                        <p id="price">€2,49</p>
-                    </div>
-                </div>
-
-                <div class="option">
-                    <img src="img/snack2.png" />
-                    <div class="content">
-                    <p style="font-size: 30px;"><b>Kipnuggies</b></p>
-                        <div class="phpdesc">
-                            <?php
-                                $productID = 'SNA02';
-                                $stmt->bindParam(":id", $productID);
-                                $stmt-> execute();
-                                $result = $stmt->fetch();
-                                echo $result['beschrijving'];
-                            ?> 
-                        </div>
-                        <p>Bestelcode: SNA02</p>
-                        <p id="price">€3,49</p>
-                    </div>
-                </div>
-
-                <center class="sub">Burgers</center>
-                <hr>
-                <div class="option">
-                    <img src="img/burger1.jpg" />
-                    <div class="content">
-                        <p style="font-size: 30px;"><b>El Burger S</b></p>
-                            <div class="phpdesc">
-                            <?php
-                                $productID = 'BUR01';
-                                $stmt->bindParam(":id", $productID);
-                                $stmt-> execute();
-                                $result = $stmt->fetch();
-                                echo $result['beschrijving'];
-                            ?> 
-                            </div>
-                        <p>Bestelcode: BUR01</p>
-                        <p id="price">€5,99</p> 
-                    </div>
-                </div>
-                <div class="option">
-                    <img src="img/burger2.png" />
-                    <div class="content">
-                        <p style="font-size: 30px;"><b>Burgerino Specialo</b></p>
-                        <div class="phpdesc">
-                            <?php
-                                $productID = 'BUR02';
-                                $stmt->bindParam(":id", $productID);
-                                $stmt-> execute();
-                                $result = $stmt->fetch();
-                                echo $result['beschrijving'];
-                            ?> 
-                        </div>
-                        <p>Bestelcode: BUR02</p>
-                        <p id="price">€6,99</p>
-                    </div>
-                </div>
+                <div class="all"></div>
+            </div>
             </div>
         </div>
         <!--Footer-->
@@ -162,3 +49,4 @@
         
     </body>
 </html>
+<?php include_once('menuitems.php'); ?>
