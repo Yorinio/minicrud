@@ -229,6 +229,12 @@ li a {
     backdrop-filter: blur(5px);
 }
 
+.classheader {
+    text-transform:uppercase;
+    font-size:30px!important;
+    letter-spacing:20px;
+    padding-top:120px;
+}
 .sub {
     margin-top:150px;
     letter-spacing:25px;
@@ -246,18 +252,13 @@ li a {
 }
 
 .content #name {
-    font-size:30px;
+    font-size:25px;
 }
 
 .content #price {
-    padding-top:80px;
-    padding-left:360px;
-    font-weight:bold;
-}
-#price {
-    margin-left:300px;
-    margin-top:-40px;
-    font-size:30px;
+    font-size:20px;
+    letter-spacing:4px;
+    padding-left: 10px;
 }
 
 .option {
@@ -265,16 +266,14 @@ li a {
     padding-right:20px;
 }
 .option .content {
-    margin-top: 50px;
+    margin-top: 100px;
     
 
 }
 
 .adminpanel {
     display: none;
-    
     padding:20px;
-
 }
 
 #logout {

@@ -28,15 +28,15 @@
 
         <!--Container-->
         <div class="container">
-            <center><h1>Ons menu</h1></center>
+            <center><h1>Assortiment</h1></center>
             <div class="topleftarrow"></div>
             <div class="textbox">
-                <h5>
+                <p>
                     <div class="harrowleft"></div>
                     <p>Bij Cafetaria S hebben wij ervoor gekozen om een balans te vinden tussen luxe en convenience.</p>
                     <p>Voor vragen over allergenen kunt u ons bellen op 0648293092.</p>
                     <div class="harrowright"></div>
-                </h5>
+</p>
 
       
                 <div class="all"></div>

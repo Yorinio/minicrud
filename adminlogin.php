@@ -16,7 +16,6 @@ if (isset($_POST["knop"])) {
         <script>
             localStorage.setItem("loggedin", "true");
             window.location.replace("http://localhost/minicrud/admin.php");
-
         </script>
     <?php 
     } else { ?>
