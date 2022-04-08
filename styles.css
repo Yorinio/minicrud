@@ -25,7 +25,6 @@ select {
     background-color:rgba(0, 0, 0, 0.2);
     padding:5px;
     border:1px solid white;
-    margin-bottom:13px;
 }
 
 textarea {
@@ -53,10 +52,25 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 
 button {
     background-color:rgba(0, 0, 0, 0.4);
-    padding:5px;
+    padding:2.5px;
     border:1px solid white;
     font-weight:bold;
     font-size:17px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:2px;
+
+}
+
+.margin-left {
+    margin-left:20px;
+}
+
+#beschrijving {
+    margin-top:-125px;
+    position:absolute;
+    margin-left:10px;
+    height:170px;
 }
 p {
     font-family: 'Poppins', sans-serif;
@@ -75,8 +89,8 @@ h5 {
     width:auto;
     height:50px;
     padding:80px;
-    background-color:rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    background-color:rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(14px);
     padding-top:40px;
     border-radius:0px;
     border-bottom:2px solid white;
@@ -108,8 +122,8 @@ h5 {
     margin-top:120px;
     float:left;
     border-top:2px solid white;
-    backdrop-filter: blur(5px);
-    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(14px);
+    background-color:rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
     padding-bottom:15px;
     margin-left:25px;
@@ -125,8 +139,8 @@ h5 {
     margin-top:400px;
     float:left;
     border-top:2px solid white;
-    backdrop-filter: blur(5px);
-    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(14px);
+    background-color:rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
     padding-bottom:15px;
     margin-left:25px;
@@ -172,8 +186,8 @@ li a {
     margin-top:20px;
     margin-left: 300px;
     padding:20px;
-    background-color:rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    background-color:rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(14px);
 }
 
 
@@ -225,8 +239,8 @@ li a {
     position:absolute;
     border-top:5px solid white; 
     bottom: 0;
-    background-color:rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    background-color:rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(14px);
 }
 
 .classheader {
@@ -243,8 +257,10 @@ li a {
 }
 .option img {
     width:300px;
-    border:1px solid white;
+    border:0px solid white;
     float:left;
+    box-shadow: 0px 0px 15px #fff;
+
 }
 
 .content #name, #desc {
@@ -281,10 +297,16 @@ li a {
     margin-top:-50px;
 }
 
-.adddish {
-    float:left;
+.dishtools form {
+    display: flex;
 }
 
-.editdish {
-    margin-left:200px;
+.dishtools img {
+    margin-top:20px;
+    width:334px;
+    border:1px solid white;
+}
+
+.editbuttons {
+    margin-left:30px;
 }

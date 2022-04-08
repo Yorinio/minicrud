@@ -1,20 +1,17 @@
+
 <?php 
     include_once('connect.php'); 
 
+
     if (isset($_POST['knop'])) {
        
-        $sql = "UPDATE voorraad SET beschrijving = :beschrijving WHERE ID=:id";
+        $sql = "UPDATE voorraad SET beschrijving WHERE ID=1";
         $stmt = $connect->prepare($sql);
-        $productDesc = $_POST['beschrijving'];
-        $id = $_POST['bestelcode'];
+        $productDesc = `fdasd`;
         $stmt->bindParam(":beschrijving", $productDesc);
-        $stmt->bindParam(":id", $id);
         $stmt->execute();
         $result = $stmt->fetchAll();
-        ?> 
-        <script>
-            window.location="http://localhost/minicrud/admin.php";
-        </script>
-        <?php
+      
     }
 ?>
+<script>window.location:("s")</script>

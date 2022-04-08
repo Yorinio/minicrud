@@ -44,36 +44,64 @@
          </form>
       </div>
       <div class="adminpanel">
-         <div class="adddish">
-            <form name="oefen" action="uitkomst.php" method="post">
-               <input placeholder="Foto link" id="naam" name="voornaam"> <br>
-               <input placeholder="Naam gerecht" id="wachtwoord" name="wachtwoord"> <br>
-               <input placeholder="Beschrijving gerecht" id="wachtwoord" name="wachtwoord"> <br>
-               <button style="width:175px; margin-top:20px;" id="send" name="knop">Toevoegen</button>
-            </form>
-         </div>
-         <br>
-         <div class="editdish">
-            <form name="oefen" action="update.php" method="post">
-                <select  style="width:175px;" id="bestelcode" name="bestelcode">
-                </select> <br>
-               <textarea style="height:150px; width:175px;"  placeholder="Nieuwe beschrijving" id="beschrijving" name="beschrijving"></textarea> <br>
-               <button style="width:175px; margin-top:20px;" id="send" name="knop">Bewerk</button>
-               
-            </form>
-         </div>
+      <div class="details">         
 
+            <form name="oefen" method="post">
+                  <select style="width:170px;" id="bestelcode" name="bestelcode">
+                  
+                  </select> 
 
+                  <button style="width: 152px;" id="send" name="knop">Inzien</button>
+                  <br>
+                  <input placeholder="ID voor nieuw gerecht" id="idnieuwgerecht" name="idnieuwgerecht"> <br>
 
+                  <input placeholder="Naam gerecht" id="naamgerecht" name="naamgerecht"> <br>
+                  <input placeholder="Prijs gerecht" id="prijsgerecht" name="prijsgerecht"> <br>
+                  <input placeholder="Klasse gerecht" id="klassegerecht" name="klassegerecht"> <br>
+                  <input placeholder="Foto link" id="fotolink" name="fotolink"> 
+                  <textarea placeholder="Nieuwe beschrijving" id="beschrijving" name="beschrijving"></textarea> <br>
+                  <img id="dishimg" src="http://localhost/minicrud/img/friet1.png">
+                   <a href="http://localhost/minicrud/add.php">Toevoegen</a>
 
-
-
-       
-
-
-
-
+               </div>
  
+
+
+
+
+
+
+
+<!-- Get item info on same page-->
+<script>
+           <?php
+         if (isset($_POST['knop'])) {  
+            $sql = "SELECT * FROM `voorraad` WHERE ID=:id";
+            $stmt = $connect->prepare($sql);
+            $id = $_POST['bestelcode'];
+            $stmt->bindParam(":id", $id);
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+               foreach($result as $value)
+               {  
+                     ?>  
+                           var naam = '<?=$value['naam'] ?>'; 
+                           var klasse = '<?=$value['klasse'] ?>'; 
+                           var foto = '<?=$value['foto'] ?>'; 
+                           var beschrijving = '<?=$value['beschrijving'] ?>'; 
+                           var prijs = '<?=$value['prijs'] ?>'; 
+                           document.querySelector("#naamgerecht").value = naam;
+                           document.querySelector("#prijsgerecht").value = prijs;
+                           document.querySelector("#klassegerecht").value = klasse;
+                           document.querySelector("#beschrijving").value = beschrijving;
+                           document.querySelector("#fotolink").value = foto;
+                           document.querySelector("#dishimg").src = foto;
+            <?php
+        }
+    }
+?>
+
+ </script>
 
       </div>
       <!--Footer-->
