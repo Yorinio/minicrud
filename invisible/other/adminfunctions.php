@@ -24,7 +24,7 @@ if (isset($_SESSION['loggedin'])) {
 
 <!--Load items into select-->
 <?php
-$sql = "SELECT * FROM `voorraad`";
+$sql = "SELECT * FROM `voorraad` ORDER BY `voorraad`.`ID` ASC";
 $stmt = $connect->prepare($sql);
 $stmt->execute();
 $result = $stmt->fetchAll();

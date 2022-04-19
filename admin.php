@@ -38,18 +38,20 @@
          </div>
          <div class="adminpanel">
             <div class="details">
-            <p class="label">Uit te voeren actie:</p>
-               <select class="adminoption">
-                  <option>Bewerken</option>
-                  <option>Toevoegen</option>
-                  <option>Verwijderen</option>
-               </select>
+        
 
                <form name="oefen" method="post">
                <select style="width:170px;" id="bestelcode" name="bestelcode">
                </select> 
                <button style="width: 152px;" id="send" class="inzien" name="knop">Inzien</button>
               
+               <p class="label">Uit te voeren actie:</p>
+               <select class="adminoption">
+                  <option>Bewerken</option>
+                  <option>Toevoegen</option>
+                  <option>Verwijderen</option>
+               </select>
+               
                <br>
                <input placeholder="ID bewerken kan niet" id="idnieuwgerecht" name="idnieuwgerecht"> <br>
                <input placeholder="Naam gerecht" id="naamgerecht" name="naamgerecht"> <br>
