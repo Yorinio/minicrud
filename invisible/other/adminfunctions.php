@@ -50,10 +50,14 @@ adminselect.addEventListener('change', (event) => {
   if(document.querySelector(".adminoption").value == 'Bewerken') {
       document.querySelector("#toevoegen").style.display = "none";
       document.querySelector("#verwijderen").style.display = "none";
+      document.querySelector("#bestelcode").style.display = "inline";
+      document.querySelector(".inzien").style.display = "inline";
       document.querySelector("#updaten").style.display = "flex";
 }
 if(document.querySelector(".adminoption").value == 'Toevoegen') {
       document.querySelector("#toevoegen").style.display = "flex";
+      document.querySelector("#bestelcode").style.display = "none";
+      document.querySelector(".inzien").style.display = "none";
       document.querySelector("#verwijderen").style.display = "none";
       document.querySelector("#updaten").style.display = "none";
       document.querySelector("#idnieuwgerecht").value = "";
@@ -65,12 +69,15 @@ if(document.querySelector(".adminoption").value == 'Toevoegen') {
       document.querySelector("#dishimg").src = "";
 }
 if(document.querySelector(".adminoption").value == 'Verwijderen') {
+    document.querySelector("#bestelcode").style.display = "inline";
+      document.querySelector(".inzien").style.display = "inline";
       document.querySelector("#toevoegen").style.display = "none";
       document.querySelector("#verwijderen").style.display = "flex";
       document.querySelector("#updaten").style.display = "none";
 }
 });
 </script>
+
 <!--Load items into select-->
            <?php
 if (isset($_POST['knop'])) {
@@ -140,7 +147,6 @@ if (isset($_POST['update'])) {
 if (isset($_POST['delete'])) {
     $sql = "DELETE FROM `voorraad` WHERE ID=:id";
     $stmt = $connect->prepare($sql);
-    $productDesc = `fdasd`;
     $stmt->bindParam(":id", $_POST['idnieuwgerecht']);
     $stmt->execute();
     $result = $stmt->fetchAll();

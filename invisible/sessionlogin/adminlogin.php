@@ -21,6 +21,14 @@ if (isset($_POST["loginbutton"])) {
             window.location = "http://localhost/minicrud/admin.php";
         </script>
         <?php
+    } else {
+        ?>
+        <script>
+        alert("Inloggegevens onjuist.");
+        window.location = "http://localhost/minicrud/admin.php";
+
+        </script>
+        <?php
     }
 }
 ?>

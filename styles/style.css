@@ -301,6 +301,7 @@ li a {
     margin-top:20px;
     width:334px;
     border:1px solid white;
+
 }
 
 .editbuttons {
@@ -311,12 +312,14 @@ li a {
     margin-left:-10px;
     font-size:16px!important;
     padding-top:20px;
+    
 }
 
 .details img {
     width:333px;
     border:1px solid white;
     margin-top: 13px;
+
 }
 
 .details input {

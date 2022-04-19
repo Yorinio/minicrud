@@ -32,22 +32,24 @@
          <div class="loginform">
             <form name="oefen" action="invisible/sessionlogin/adminlogin.php" method="post">
                <input placeholder="Gebruikersnaam" id="username" name="username"> <br>
-               <input placeholder="Wachtwoord" id="password" name="password"> <br>
+               <input placeholder="Wachtwoord" id="password" type="password" name="password"> <br>
                <button style="width:175px; margin-top:20px;" id="send" name="loginbutton">Login</button>
             </form>
          </div>
          <div class="adminpanel">
             <div class="details">
-               <form name="oefen" method="post">
-               <select style="width:170px;" id="bestelcode" name="bestelcode">
-               </select> 
-               <button style="width: 152px;" id="send" name="knop">Inzien</button>
-               <p class="label">Uit te voeren actie:</p>
+            <p class="label">Uit te voeren actie:</p>
                <select class="adminoption">
                   <option>Bewerken</option>
                   <option>Toevoegen</option>
                   <option>Verwijderen</option>
                </select>
+
+               <form name="oefen" method="post">
+               <select style="width:170px;" id="bestelcode" name="bestelcode">
+               </select> 
+               <button style="width: 152px;" id="send" class="inzien" name="knop">Inzien</button>
+              
                <br>
                <input placeholder="ID bewerken kan niet" id="idnieuwgerecht" name="idnieuwgerecht"> <br>
                <input placeholder="Naam gerecht" id="naamgerecht" name="naamgerecht"> <br>
