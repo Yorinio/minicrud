@@ -15,8 +15,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+      <script src="javascript/fieldcheck.js"></script>
       <title>Cafetaria S</title>
    </head>
+
    <body>
       <!--Header-->
       <?php include 'header.php';?>
@@ -30,10 +32,10 @@
             <h1>Admin Panel</h1>
          </center>
          <div class="loginform">
-            <form name="oefen" action="invisible/sessionlogin/adminlogin.php" method="post">
+            <form id="loginform" name="oefen" method="post">
                <input placeholder="Gebruikersnaam" id="username" name="username"> <br>
                <input placeholder="Wachtwoord" id="password" type="password" name="password"> <br>
-               <button style="width:175px; margin-top:20px;" id="send" name="loginbutton">Login</button>
+               <button style="width:175px; margin-top:20px;" id="send" onclick="checkFields();" name="loginbutton">Login</button>
             </form>
          </div>
          <div class="adminpanel">
