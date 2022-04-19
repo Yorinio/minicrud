@@ -1,5 +1,5 @@
 html {
-    background: url(img/bg1.png) no-repeat center center fixed; 
+    background: url(../img/bg1.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,6 +19,8 @@ input {
     background-color:rgba(0, 0, 0, 0.2);
     padding:5px;
     border:1px solid white;
+    margin-top:10px;
+
 }
 
 select {
@@ -27,11 +29,6 @@ select {
     border:1px solid white;
 }
 
-textarea {
-    background-color:rgba(0, 0, 0, 0.2);
-    padding:5px;
-    border:1px solid white;
-}
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
@@ -66,19 +63,15 @@ button {
     margin-left:20px;
 }
 
-#beschrijving {
-    margin-top:-125px;
-    position:absolute;
-    margin-left:10px;
-    height:170px;
-}
+
 p {
     font-family: 'Poppins', sans-serif;
     margin-left:20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing:5px; 
 }
 
 h5 {
@@ -97,8 +90,10 @@ h5 {
 }
 
 .header h1 {
-    font-size:60px;
-    margin-top:-30px;
+    font-size:50px;
+    margin-top:-35px;
+    letter-spacing:7px;
+    margin-left:20px;
 }
 
 
@@ -188,6 +183,7 @@ li a {
     padding:20px;
     background-color:rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(14px);
+    padding-bottom:50px;
 }
 
 
@@ -219,11 +215,11 @@ li a {
 }
 
 .harrowleft {
-    width:20px;
+    width:60px;
     height:20px;
     border-left:2px solid white;
     border-top:2px solid white;
-    margin-left:-15px;
+    margin-left:5px;
     margin-top:-10px;
     position:absolute;
 }
@@ -309,4 +305,61 @@ li a {
 
 .editbuttons {
     margin-left:30px;
+}
+
+.label {
+    margin-left:-10px;
+    font-size:16px!important;
+    padding-top:20px;
+}
+
+.details img {
+    width:333px;
+    border:1px solid white;
+    margin-top: 13px;
+}
+
+.details input {
+    margin-top:12px;
+}
+.details textarea {
+    background-color:rgba(0, 0, 0, 0.2);
+    padding:5px;
+    border:1px solid white;
+    margin-top:-165px;
+    position:absolute;
+    margin-left:10px;
+    height:209px;
+}
+
+.details .adminoption {
+    width: 330px;
+    margin-bottom: 30px;
+    display:Flex;
+}
+
+#updaten, #toevoegen, #verwijderen {
+    display:flex;
+    width: 332px !important;
+    margin-top:10px;
+}
+
+#toevoegen, #verwijderen {
+    display:flex;
+    width: 332px !important;
+    margin-top:10px;
+    display:none;
+}
+
+
+#panellogoutbtn, #panelloginbtn {
+    margin-left:50px;  
+}
+
+#panellogoutbtn {
+    display:none;
+}
+
+.searchdishpanel {
+    margin:40px;
 }
