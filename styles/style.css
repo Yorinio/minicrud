@@ -15,6 +15,66 @@ html {
 
 }
 
+@media screen and (max-width:1000px) {
+    .header {
+        height:200px!important;
+    }
+
+    .hf-left {
+        padding-top:100px;
+
+    }
+    
+#name {
+    position:absolute;
+    display:flex;
+    margin-top:190px;
+    margin-left:-300px;
+}
+
+#itemimg {
+    margin-bottom: 100px;
+}
+
+#desc {
+    margin-top:300px;
+    z-index:1;
+    margin-left:-260px;
+}
+  }
+
+  @media screen and (max-width:550px) {
+    .header h1 {
+        font-size:20px!important;
+        position:absolute;
+        width:100%;
+        display:flex;
+        position:absolute;
+    }
+    .hf-left {
+        margin-left:-90px;
+    }
+    .hf-right {
+        margin-right: -70px;
+    }
+    .nav {
+        width:170px!important;
+    }
+    .welkom-li h1 {
+        font-size:30px!important;
+        margin-left:-50px;
+    }
+    .cart {
+        width:170px!important;
+    }
+    #panelloginbtn {
+        width:100px!important;
+        margin-left:30px!important;
+    }
+    }
+    
+
+
 input {
     background-color:rgba(0, 0, 0, 0.2);
     padding:5px;
