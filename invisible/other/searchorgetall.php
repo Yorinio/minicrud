@@ -6,7 +6,7 @@ if (isset($_POST["search"])) {
     $stmt->execute();
     $result = $stmt->fetchAll();
     foreach ($result as $value) {
-?>       
+    ?>       
                    <div class="option">
                        <div class="content">
                        <img id="itemimg" src="<?php echo $value['foto']; ?>">
