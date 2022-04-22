@@ -5,7 +5,6 @@ if (isset($_SESSION['loggedin'])) {
             var sessionli = '<?=$_SESSION['loggedin'] ?>';
             console.log(sessionli);
                if(sessionli == "yes") {
-
                   document.querySelector('#panelloginbtn').style.display = "none";
                   document.querySelector('#panellogoutbtn').style.display = "block";
 

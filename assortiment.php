@@ -37,13 +37,13 @@
             <input name="term">
             <button name="search" id="startsearch">Zoeken</button>
          </form>
-         <div class="all"></div>
+         <div class="all">
+            <?php include_once('invisible/other/searchorgetall.php'); ?>
+         </div>
       </div>
       </div>
       </div>
       <!--Footer-->
-      <?php include 'footer.php';?>
    </body>
 </html>
-<?php include_once('invisible/other/searchorgetall.php'); ?>
 <?php include_once('invisible/other/logincheck.php'); ?>

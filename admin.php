@@ -55,7 +55,7 @@
                </select>
                
                <br>
-               <input placeholder="ID bewerken kan niet" id="idnieuwgerecht" name="idnieuwgerecht"> <br>
+               <input placeholder="ID bewerken" id="idnieuwgerecht" name="idnieuwgerecht"> <br>
                <input placeholder="Naam gerecht" id="naamgerecht" name="naamgerecht"> <br>
                <input placeholder="Prijs gerecht" id="prijsgerecht" name="prijsgerecht"> <br>
                <input placeholder="Klasse gerecht" id="klassegerecht" name="klassegerecht"> <br>

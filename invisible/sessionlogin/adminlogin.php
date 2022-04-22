@@ -19,7 +19,6 @@ if (isset($_POST["loginbutton"])) {
             var session = '<?=$_SESSION['loggedin']?>';
             console.log(session);
             window.location = "http://localhost/minicrud/admin.php";
-            
         </script>
         <?php
     } else {

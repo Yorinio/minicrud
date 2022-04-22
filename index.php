@@ -41,7 +41,6 @@
       </div>
       </div>
       <!--Footer-->
-      <?php include 'footer.php';?>
    </body>
 </html>
 <?php include_once('invisible/other/logincheck.php'); ?>

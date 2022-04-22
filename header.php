@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+   <head>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Poppins:wght@300&display=swap" rel="stylesheet">
+   </head>
    <body>
       <div class="header">
+         
          <center>
-            <h1>Cafetaria S</h1>
+            <h1>Multibar S</h1>
          </center>
          <center>
-            <p>Voor de luxe lekkernij</p>
+            <p>贅沢な珍味のために</p>
          </center>
          <div class="hf-left">
             <p>0648293092 <br> cafetaria_s@gmail.com</p>

@@ -10,7 +10,6 @@ if (isset($_POST['logout'])) {
 ?>
         <script>
              location.href = "/minicrud/admin.php"
-
         </script>
         <?php
 }

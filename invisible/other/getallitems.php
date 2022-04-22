@@ -15,60 +15,38 @@
             $result = $stmt->fetchAll();
             foreach ($result as $value) {
             ?>
-                            <script>
-                                var klasse = '<?=$value['klasse'] ?>'; 
-                                var tag = document.createElement("p");
-                                tag.id = klasse;
-                                var text = document.createTextNode(klasse);
-                                tag.appendChild(text);
-                                var element = document.querySelector(".all");
-                                element.appendChild(tag);
-                                tag.innerHTML = 
-                                `                        
-                                <div class="klasse">
-                                    <center>
-                                        <p class="classheader">` + klasse + `</p>
-                                    </center>
-                                    <hr>
-                                        <div class="` + klasse +  `">
-                                            
-                                        </div>
-                                </div>
-                                        `
-                            </script>
+
+                    <div class="klasse">
+                        <center>
+                            <p class="classheader"><?php echo $value['klasse']; ?></p>
+                        </center>
+                        <hr>
+                            <div class="<?php echo $value['klasse']; ?>">
+
                 <?php
-            }
-            $sql = "SELECT * FROM voorraad";
-            $stmt = $connect->prepare($sql);
-            $stmt->execute();
-            $result = $stmt->fetchAll();
-            foreach ($result as $value) {
+                $sql2 = "SELECT * FROM voorraad WHERE klasse = :klasse";
+                $stmt2 = $connect->prepare($sql2);
+                $stmt2->bindParam(':klasse', $value['klasse']);
+                $stmt2->execute();
+                $producten = $stmt2->fetchAll();
+                foreach ($producten as $product) {
             ?>  
-                            <script>
-                                var naam = '<?=$value['naam'] ?>'; 
-                                var klasse = '<?=$value['klasse'] ?>'; 
-                                var foto = '<?=$value['foto'] ?>'; 
-                                var beschrijving = '<?=$value['beschrijving'] ?>'; 
-                                var prijs = '<?=$value['prijs'] ?>'; 
-                                var tag = document.createElement("p");
-                                tag.id = naam;
-                                var text = document.createTextNode(naam);
-                                tag.appendChild(text);
-                                var element = document.querySelector("." + klasse);
-                                element.appendChild(tag);
-                                tag.innerHTML = 
-                                `
-                                <div class="option">
-                                    <div class="content">
-                                        <img id="itemimg" src="` + foto + `">
-                                        <p id="name">` + naam + `<a id="price"> ` + prijs + `</a></p>
-                                        <p id="desc">` + beschrijving + `</p>
-                                    </div>
-                                </div>
-                                `
-                            </script>
-                <?php
-            }
-        ?> 
+                    <div class="option">
+                        <div class="content">
+                            <img id="itemimg" src="<?php echo $product['foto']; ?>">
+                            <p id="name"><?php echo $product['naam']; ?><a id="price"><?php echo $product['prijs']; ?></a></p>
+                            <p id="desc"><?php echo $product['beschrijving']; ?></p>
+                        </div>
+                    </div>
+            <?php
+                    }
+                    ?>
+
+                                
+</div>
+                    </div>
+                    <?php
+                }
+            ?> 
    </body>
 </html>
