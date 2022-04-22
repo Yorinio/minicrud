@@ -16,7 +16,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      <title>Cafetaria S</title>
+      <title>Multibar S</title>
    </head>
    <body>
       <!--Header-->
@@ -31,7 +31,7 @@
             <h1>Assortiment</h1>
          </center>
          <div class="harrowleft"></div>
-         <p>Bij Cafetaria S hebben wij ervoor gekozen om een balans te vinden tussen luxe en convenience.</p>
+         <p>Bij Multibar S hebben wij ervoor gekozen om een balans te vinden tussen luxe en convenience.</p>
          <p>Voor vragen over allergenen kunt u ons bellen op 0648293092.</p>
          <form class="searchdishpanel" name="search" method="post">
             <input name="term">

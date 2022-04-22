@@ -9,7 +9,7 @@
             <li><a href="index.php">Over ons</a></li>
             <li><a href="assortiment.php">Assortiment</a></li>
             <br>
-            <li><a href="admin.php">Login</a></li>
+            <li><a href="admin.php">Admin</a></li>
          </ul>
       </nav>
    </body>

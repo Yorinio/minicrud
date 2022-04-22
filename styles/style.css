@@ -81,7 +81,7 @@ html {
 input {
     padding:5px;
     border:0px solid; 
-    background-color: #212121;
+    background-color: rgba(0, 0, 0, 0.3);
     border-bottom:1px solid red;
     padding:8px;
     margin-top:10px;
@@ -91,7 +91,8 @@ input {
 select {
     border:0px solid; 
     background-color: #212121;
-    border-bottom:1px solid red;
+    background-color: rgba(0,0,0,0.4);
+    border:1px solid red;
     padding:8px;
 }
 
@@ -116,8 +117,8 @@ input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 button {
     padding:5px;
     border:0px solid; 
-    background-color: #212121;
-    border-bottom:1px solid red;
+    background-color: rgba(0,0,0,0.4);
+    border:1px solid red;
     font-weight:light;
     font-size:17px;
     padding-left:10px;
@@ -406,7 +407,8 @@ li a {
     padding:5px;
     border:0px solid; 
     background-color: #212121;
-    border-bottom:1px solid red;
+    background-color: rgba(0,0,0,0.4);
+    border:1px solid red;
 }
 
 .details .adminoption {

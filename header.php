@@ -14,7 +14,7 @@
             <p>贅沢な珍味のために</p>
          </center>
          <div class="hf-left">
-            <p>0648293092 <br> cafetaria_s@gmail.com</p>
+            <p>+31648293092 <br> multibar_s@gmail.com</p>
          </div>
          <div class="hf-right">
             <p>Bredestraat 2 <br> 6695CA Wijchen</p>

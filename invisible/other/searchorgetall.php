@@ -6,29 +6,14 @@ if (isset($_POST["search"])) {
     $stmt->execute();
     $result = $stmt->fetchAll();
     foreach ($result as $value) {
-?>  
-               <script>
-                   var naam = '<?=$value['naam'] ?>'; 
-                   var klasse = '<?=$value['klasse'] ?>'; 
-                   var foto = '<?=$value['foto'] ?>'; 
-                   var beschrijving = '<?=$value['beschrijving'] ?>'; 
-                   var prijs = '<?=$value['prijs'] ?>'; 
-                   var tag = document.createElement("p");
-                   tag.id = naam;
-                   var text = document.createTextNode(naam);
-                   tag.appendChild(text);
-                   var element = document.querySelector(".all");
-                   element.appendChild(tag);
-                   tag.innerHTML = 
-                   `
+?>       
                    <div class="option">
                        <div class="content">
-                           <img id="itemimg" src="` + foto + `">
-                           <p id="name">` + naam + `<a id="price"> ` + prijs + `</a></p>
-                           <p id="desc">` + beschrijving + `</p>
+                       <img id="itemimg" src="<?php echo $value['foto']; ?>">
+                            <p id="name"><?php echo $value['naam']; ?><a id="price"><?php echo $value['prijs']; ?></a></p>
+                            <p id="desc"><?php echo $value['beschrijving']; ?></p>
                        </div>
                    </div>
-                   `
                </script>
      <?php
     }

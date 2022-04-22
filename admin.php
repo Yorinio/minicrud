@@ -16,7 +16,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
       <script src="javascript/fieldcheck.js"></script>
-      <title>Cafetaria S</title>
+      <title>Multibar S</title>
    </head>
 
    <body>

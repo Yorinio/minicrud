@@ -14,7 +14,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-      <title>Cafetaria S</title>
+      <title>Multibar S</title>
    </head>
    <body>
       <!--Header-->
@@ -34,7 +34,7 @@
          <p>Hier combineren wij het gemak van fastfood met de luxe van een restaurant.</p>
          <p>In onze keuken vindt u professionele apparatuur met échte chefs. Dit is ook wat ons uniek maakt als snackbar.</p>
          <br>
-         <p>Wij serveren onderandere unieke snacks, burgers, drankjes, milkshakes en ijsjes.</p>
+         <p>Wij serveren onderandere unieke snacks, burgers, frieten en chinese specialiteiten.</p>
          <br>
          <p>Graag verwelkomen wij u in ons restaurant op de Bredestraat 2, 6695CA Wijchen.</p>
          <p>Wilt u liever langskomen voor een take-away? Bel ons dan alstublieft op: 0648293092</p>

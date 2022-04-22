@@ -30,7 +30,7 @@
                 $stmt2->execute();
                 $producten = $stmt2->fetchAll();
                 foreach ($producten as $product) {
-            ?>  
+                ?>  
                     <div class="option">
                         <div class="content">
                             <img id="itemimg" src="<?php echo $product['foto']; ?>">
@@ -38,14 +38,8 @@
                             <p id="desc"><?php echo $product['beschrijving']; ?></p>
                         </div>
                     </div>
-            <?php
-                    }
-                    ?>
-
-                                
-</div>
-                    </div>
-                    <?php
+                 <?php
+                }
                 }
             ?> 
    </body>

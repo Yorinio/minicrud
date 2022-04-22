@@ -7,7 +7,6 @@ if (isset($_SESSION['loggedin'])) {
             console.log(sessionli);
                if(sessionli == "yes") {
                   document.querySelector('.adminpanel').style.display = "block";
-                  
                   document.querySelector('.loginform').style.display = "none";
                   document.querySelector('#panelloginbtn').style.display = "none";
                   document.querySelector('#panellogoutbtn').style.display = "block";
@@ -31,8 +30,7 @@ $result = $stmt->fetchAll();
 foreach ($result as $value) {
 ?>  
                     <script>
-                        var item = '<?=$value['naam'] ?>';
-                
+                        var item = '<?=$value['naam'] ?>';               
                         var x = document.querySelector("#bestelcode");
                         var option = document.createElement("option");
                         option.text = '<?=$value['ID'] ?>';
@@ -97,7 +95,6 @@ if (isset($_POST['knop'])) {
                            var beschrijving = '<?=$value['beschrijving'] ?>'; 
                            var prijs = '<?=$value['prijs'] ?>'; 
                            document.querySelector("#idnieuwgerecht").value = id;
-
                            document.querySelector("#naamgerecht").value = naam;
                            document.querySelector("#prijsgerecht").value = prijs;
                            document.querySelector("#klassegerecht").value = klasse;
