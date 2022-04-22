@@ -1,4 +1,4 @@
 # MiniCRUD
 
-lekker man
+lekker man Yorick!!
 Project van Yorick
