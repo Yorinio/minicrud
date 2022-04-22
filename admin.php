@@ -1,5 +1,4 @@
 <?php include_once('invisible/sessionlogin/connect.php'); ?> 
-<?php include_once('invisible/sessionlogin/session.php'); ?> 
 
 <!DOCTYPE html>
 <html lang="en">
